@@ -15,8 +15,8 @@ use App\Repository\DragonTreasureRepository;
 class DailyQuestStateProvider implements ProviderInterface
 {
     public function __construct(
-        private DragonTreasureRepository $treasureRepository,
-        private Pagination $pagination,
+        private readonly DragonTreasureRepository $treasureRepository,
+        private readonly Pagination               $pagination,
     )
     {
     }
